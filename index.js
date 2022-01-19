@@ -12,9 +12,9 @@ app.use(express.urlencoded({ extended: true }));
 const elasticemail = require("elasticemail");
 
 const client = elasticemail.createClient({
-  username: "Raghupriyanth",
+  username: "**************",
   apiKey:
-    "F1F8BA21F4670F65A837E50A7D801239CE92200117955BF1BE53B07BD5132A02D34595B9C83A4259DEA4314C47AAA16F",
+    "**********************************",
 });
 
 const generateOtp = () => {
@@ -27,8 +27,8 @@ const generateOtp = () => {
 
 const sendEmail = (toEmail, otp) => {
   let msg = {
-    from: "raghupriyanth@gmail.com",
-    from_name: "Raghupriyanth",
+    from: "fromemail@gmail.com",
+    from_name: "Sender name",
     to: toEmail,
     subject: "Verify your account for the localhost project",
     body_text: `Verify your account: OTP for sigin is ${otp} Have a great day happy learning!!`,
